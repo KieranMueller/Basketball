@@ -1,0 +1,50 @@
+html {
+    background-color: rgb(26, 26, 26);
+  }
+  .video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.35;
+  }
+  button {
+    height: 100px;
+    width: 300px;
+    margin: 20px;
+    background-color: blanchedalmond;
+    font-size: 40px;
+    transition: 0.5s;
+  }
+  button:hover {
+    scale: 1.1;
+    background-color: rgb(170, 172, 151);
+  }
+  h1 {
+    margin: 0;
+    color: blanchedalmond;
+    font-size: 100px;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .reset {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    align-self: center;
+  }
+  .beegdiv {
+    display: flex;
+    height: 97vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .godcontainer {
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
