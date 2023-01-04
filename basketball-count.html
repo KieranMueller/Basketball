@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Tally</title>
+    <style>
+      html {
+        background-color: rgb(26, 26, 26);
+      }
+      .video {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.35;
+      }
+      button {
+        height: 100px;
+        width: 300px;
+        margin: 20px;
+        background-color: blanchedalmond;
+        font-size: 40px;
+        transition: 0.5s;
+      }
+      button:hover {
+        scale: 1.1;
+        background-color: rgb(170, 172, 151);
+      }
+      h1 {
+        margin: 0;
+        color: blanchedalmond;
+        font-size: 100px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .reset {
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        align-self: center;
+      }
+      .beegdiv {
+        display: flex;
+        height: 97vh;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .godcontainer {
+        margin-bottom: 80px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <video class="video" autoplay muted loop controls>
+      <source src="/HTML/basketball-counter/video/production ID_5192157.mp4" />
+    </video>
+    <div class="beegdiv">
+      <div class="godcontainer">
+        <h1 id="tally">Home</h1>
+        <div class="container">
+          <button onclick="addOne()">+1</button>
+          <button onclick="addTwo()">+2</button>
+          <button onclick="addThree()">+3</button>
+          <button class="reset" onclick="reset()">RESET</button>
+        </div>
+      </div>
+      <div class="godcontainer">
+        <h1 id="tallyAway">Away</h1>
+        <div class="container">
+          <button onclick="addOneAway()">+1</button>
+          <button onclick="addTwoAway()">+2</button>
+          <button onclick="addThreeAway()">+3</button>
+          <button class="reset" onclick="resetAway()">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      homeScore = 0;
+      let tally = document.getElementById("tally");
+      function addOne() {
+        homeScore += 1;
+        tally.textContent = "Home: " + homeScore;
+      }
+      function addTwo() {
+        homeScore += 2;
+        tally.textContent = "Home: " + homeScore;
+      }
+      function addThree() {
+        homeScore += 3;
+        tally.textContent = "Home: " + homeScore;
+      }
+      function reset() {
+        homeScore = 0;
+        tally.textContent = "Home: " + homeScore;
+      }
+      //djdjdjdjd
+      awayScore = 0;
+      let tallyAway = document.getElementById("tallyAway");
+      function addOneAway() {
+        awayScore += 1;
+        tallyAway.textContent = "Away: " + awayScore;
+      }
+      function addTwoAway() {
+        awayScore += 2;
+        tallyAway.textContent = "Away: " + awayScore;
+      }
+      function addThreeAway() {
+        awayScore += 3;
+        tallyAway.textContent = "Away: " + awayScore;
+      }
+      function resetAway() {
+        awayScore = 0;
+        tallyAway.textContent = "Away: " + awayScore;
+      }
+    </script>
+  </body>
+</html>
