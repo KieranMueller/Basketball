@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Tally</title>
+    <style></style>
+    <link src="/HTML/basketball-counter/index.css" />
+  </head>
+  <body>
+    <video class="video" autoplay muted loop controls>
+      <source src="/HTML/basketball-counter/video/production ID_5192157.mp4" />
+    </video>
+    <div class="beegdiv">
+      <div class="godcontainer">
+        <h1 id="tally">Home</h1>
+        <div class="container">
+          <button onclick="addOne()">+1</button>
+          <button onclick="addTwo()">+2</button>
+          <button onclick="addThree()">+3</button>
+          <button class="reset" onclick="reset()">RESET</button>
+        </div>
+      </div>
+      <div class="godcontainer">
+        <h1 id="tallyAway">Away</h1>
+        <div class="container">
+          <button onclick="addOneAway()">+1</button>
+          <button onclick="addTwoAway()">+2</button>
+          <button onclick="addThreeAway()">+3</button>
+          <button class="reset" onclick="resetAway()">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="/HTML/basketball-counter/index.js"></script>
+  </body>
+</html>
