@@ -2,7 +2,7 @@ html {
     background-color: rgb(26, 26, 26);
     margin:0;
     overflow:hidden;
-    touch-action:manipulation;
+    touch-action: manipulation;
   }
   .video {
     position: fixed;
@@ -18,6 +18,7 @@ html {
     width: 300px;
     margin: 20px;
     background-color: blanchedalmond;
+    color: black;
     font-size: 40px;
     transition: 0.5s;
   }
@@ -74,6 +75,12 @@ html {
         font-size: 30px;
     }
 
+  }
+  @media screen and (max-width:420px){
+    .special{
+        width:70px;
+        font-size: 16px;
+    }
   }
   @media screen and (max-height: 600px){
     h1{
