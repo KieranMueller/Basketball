@@ -72,6 +72,9 @@ html {
     h1{
         font-size: 50px;
     }
+    .video{
+        height:100%;
+    }
     button{
         margin:3px;
         font-size: 30px;
@@ -96,6 +99,9 @@ html {
   }
 }
   @media screen and (max-height: 600px){
+    html{
+        overflow-y: hidden;
+    }
     h1{
         font-size: 60px;
         position: absolute;
