@@ -16,7 +16,13 @@ homeScore = 0;
         homeScore = 0;
         tally.textContent = "Home: " + homeScore;
       }
-      //djdjdjdjd
+      function remove(){
+        if (homeScore < 0) homeScore = 0;
+        if (homeScore > 0)
+        homeScore -= 1;
+        tally.textContent = "Home: " + homeScore;
+      }
+      //away
       awayScore = 0;
       let tallyAway = document.getElementById("tallyAway");
       function addOneAway() {
@@ -33,5 +39,11 @@ homeScore = 0;
       }
       function resetAway() {
         awayScore = 0;
+        tallyAway.textContent = "Away: " + awayScore;
+      }
+      function removeAway(){
+        if (awayScore < 0) awayScore = 0;
+        if (awayScore > 0)
+        awayScore -= 1;
         tallyAway.textContent = "Away: " + awayScore;
       }
