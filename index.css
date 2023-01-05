@@ -2,6 +2,7 @@ html {
     background-color: rgb(26, 26, 26);
     margin:0;
     overflow:hidden;
+    touch-action:manipulation;
   }
   .video {
     position: fixed;
