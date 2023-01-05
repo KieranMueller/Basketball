@@ -1,7 +1,8 @@
 html {
     background-color: rgb(26, 26, 26);
     margin:0;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y: auto;
     touch-action: manipulation;
   }
   .video {
@@ -21,6 +22,7 @@ html {
     color: black;
     font-size: 40px;
     transition: 0.5s;
+    text-align: center;
   }
   .column{
     display: flex;
@@ -73,12 +75,12 @@ html {
     button{
         margin:3px;
         font-size: 30px;
+        transition:0s;
     }
     button:hover, button:active {
         scale: 1;
         background-color: rgb(170, 172, 151);
   }
-
   }
   @media screen and (max-width:420px){
     .special{
@@ -89,11 +91,17 @@ html {
         scale: 1;
         background-color: rgb(170, 172, 151);
   }
+  button{
+    transition:0s;
+  }
 }
   @media screen and (max-height: 600px){
     h1{
         font-size: 60px;
         position: absolute;
+    }
+    button{
+        transition:0s;
     }
     button:hover, button:active {
         scale: 1;
