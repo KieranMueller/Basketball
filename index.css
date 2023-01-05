@@ -81,12 +81,20 @@ html {
         width:70px;
         font-size: 16px;
     }
+    button:hover, button:active {
+        scale: 1.1;
+        background-color: rgb(170, 172, 151);
   }
+}
   @media screen and (max-height: 600px){
     h1{
         font-size: 60px;
         position: absolute;
     }
+    button:hover, button:active {
+        scale: 1.1;
+        background-color: rgb(170, 172, 151);
+  }
     .homeHeader{
         top:0;
     }
